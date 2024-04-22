@@ -1,11 +1,14 @@
 ---
 import Navbar from "./Navbar.astro";
 import MainBody from "./MainBody.astro";
-import Fondo from "./Fondo.astro";
 ---
 
 <section class="w-full relative py-0 m-0">
-    <Fondo />
+    <div
+        class="w-full min-h-full bg-main-pattern bg-center bg-no-repeat bg-cover absolute z-[-10] before:content-[''] before:absolute before:z-[-9] before:w-full before:h-full before:bg-teal-800 before:opacity-80">
+    </div>
+    <!-- imagen de fondo con la opacidad y el color verde  -->
+
     <div
         class="text-white text-center text-sm p-2 tracking-tighter bg-teal-800 relative z-50">
         <p>
