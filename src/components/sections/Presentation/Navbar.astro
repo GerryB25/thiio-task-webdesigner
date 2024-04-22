@@ -1,0 +1,36 @@
+---
+import GetStarted from "../../widgets/GetStarted.astro";
+import Bars from "../../../assets/Bars.astro";
+---
+
+<div
+    class="flex justify-evenly items-center lg:px-16 pt-7 pb-7 bg-white relative z-50">
+    <button class="block md:hidden absolute left-8 w-full" id="navbtn">
+        <Bars />
+    </button>
+    <a class="font-montserrat text-xl font-bold tracking-wider" href="/">
+        COMPANY NAME
+    </a>
+    <ul
+        class="hidden md:flex flex-col lg:flex-row justify-center lg:justify-between items-center w-1/4">
+        <li><a class="text-sm" href="/">email@example.com</a></li>
+        <li><a class="text-sm" href="/">+44 123 456 789</a></li>
+    </ul>
+    <GetStarted clase="hidden" />
+</div>
+<div
+    class="absolute z-40 bg-white w-full h-32 -translate-y-32 transition ease-in duration-200 flex flex-col justify-evenly items-center"
+    id="mobile-nav">
+    <a class="text-sm" href="/">email@example.com</a>
+    <a class="text-sm" href="/">+44 123 456 789</a>
+    <GetStarted clase="flex" />
+</div>
+
+<script>
+    const navButton = document.getElementById("navbtn");
+    const mobileNav = document.getElementById("mobile-nav");
+
+    navButton.addEventListener("click", () => {
+        mobileNav.classList.toggle("-translate-y-32");
+    });
+</script>

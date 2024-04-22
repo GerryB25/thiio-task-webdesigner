@@ -1,0 +1,41 @@
+---
+import FiveStars from "./FiveStars.astro";
+---
+
+<section class="lg:px-48 w-full flex h-64 justify-center items-center my-16">
+    <div
+        class="bg-#f9f7f7 w-full h-full flex flex-col justify-between items-center rounded-2xl p-6">
+        <div class="flex w-full justify-between items-center">
+            <h2 class="text-2xl font-bold">Reviews</h2>
+            <span class="text-sm font-bold text-teal-800">
+                Testimonial Name, who says...
+            </span>
+        </div>
+        <div class="bg-white flex h-4/5 rounded-2xl">
+            <div class="flex justify-center items-center">
+                <img
+                    class="rounded-full w-2/3"
+                    src="/michael-scott.webp"
+                    alt="profile-pic"
+                />
+            </div>
+            <div class="flex flex-col justify-center items-center px-4 gap-4">
+                <div class="flex w-full justify-between items-center">
+                    <span class="text-sm font-bold">Testimonial Name</span>
+                    <FiveStars clases="justify-center items-center" />
+                </div>
+                <p class="text-xs text-pretty">
+                    I’m baby retro chillwave letterpress small batch beard,
+                    paleo ugh banjo hot chicken godard craft beer. Biodiesel
+                    pork belly green juice VHS farm-to-table, taxidermy heirloom
+                    scenester +1 chillwave man braid readymade locavore lomo.
+                    Intelligentsia typewriter glossier, kogi pour-over YOLO
+                    everyday carry flannel. Green juice Brooklyn church-key
+                    skateboard selfies, normcore Tumblr shabby chic activated
+                    charcoal poke bicycle rights quinoa portland dreamcatcher
+                    neutra.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

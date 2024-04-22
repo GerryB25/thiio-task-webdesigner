@@ -1,0 +1,17 @@
+---
+interface Props {
+    clases: string;
+}
+
+const { clases } = Astro.props;
+
+import Star from "../../../assets/Star.astro";
+---
+
+<div class=`{clases} flex flex-row`>
+    <Star />
+    <Star />
+    <Star />
+    <Star />
+    <Star />
+</div>

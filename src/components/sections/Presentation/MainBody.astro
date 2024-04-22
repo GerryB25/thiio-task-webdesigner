@@ -1,0 +1,46 @@
+---
+import TwoBottles from "../../widgets/TwoBottles.astro";
+import GetStarted from "../../widgets/GetStarted.astro";
+import Benefits from "../../widgets/Benefits.astro";
+import Leaf from "../../../assets/Leaf.astro";
+import USA from "../../../assets/USA.astro";
+import Car from "../../../assets/Car.astro";
+import Garantia from "../../../assets/Garantia.astro";
+---
+
+<div class="w-full h-full px-6 lg:px-48 lg:grid lg:grid-cols-2 py-4">
+    <div class="flex justify-center items-center relative text-white">
+        <TwoBottles />
+    </div>
+    <div
+        class="flex flex-col justify-center items-center lg:items-start relative text-white w-full lg:h-full mb-3 lg:mb-0">
+        <p class="text-base capitalize font-bold text-center lg:text-start">
+            Supporting Subheadline Goes Here
+        </p>
+        <h1
+            class="text-xl md:text-3xl capitalize font-bold leading-relaxed text-center lg:text-start">
+            My Amazing Headline Goes Here
+        </h1>
+        <p class="text-sm font-normal mb-5 text-center lg:text-start">
+            I’m baby retro chillwave letterpress small batch beard, paleo ugh
+            banjo hot chicken godard craft beer. Biodiesel pork belly green
+            juice VHS farm-to-table, taxidermy heirloom scenester.
+        </p>
+        <GetStarted clase="flex" />
+    </div>
+    <div
+        class="lg:col-start-1 lg:col-end-3 px-12 lg:px-0 py-8 w-full lg:h-full bg-white rounded-lg flex flex-col justify-center items-start gap-2 md:gap-0 md:flex-row md:justify-evenly md:items-center">
+        <Benefits titulo="Natural Ingredients">
+            <Leaf />
+        </Benefits>
+        <Benefits titulo="Fast Shipping">
+            <Car />
+        </Benefits>
+        <Benefits titulo="Money Back Guaranteed">
+            <Garantia />
+        </Benefits>
+        <Benefits titulo="Made in the USA">
+            <USA />
+        </Benefits>
+    </div>
+</div>

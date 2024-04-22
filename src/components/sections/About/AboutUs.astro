@@ -1,0 +1,44 @@
+---
+import Tips from "./Tips.astro";
+import Heart from "../../../assets/Heart.astro";
+import Health from "../../../assets/Health.astro";
+import Brain from "../../../assets/Brain.astro";
+---
+
+<section
+    class="flex px-6 lg:px-48 justify-center items-center h-full gap-2 my-16">
+    <div class="flex flex-1 flex-col justify-around h-96">
+        <p class="uppercase font-bold text-sm text-teal-800">about us</p>
+        <h2 class="capitalize font-bold text-3xl">
+            My Amazing Headline Goes Here
+        </h2>
+        <p class="text-sm text-pretty">
+            I’m baby retro chillwave letterpress small batch beard, paleo ugh
+            banjo hot chicken godard craft beer. Biodiesel pork belly green
+            juice VHS farm-to-table, taxidermy heirloom scenester +1 chillwave
+            man braid readymade locavore lomo.
+        </p>
+        <p class="text-sm text-pretty">
+            Intelligentsia typewriter glossier, kogi pour-over YOLO everyday
+            carry flannel. Green juice Brooklyn church-key skateboard selfies,
+            normcore Tumblr shabby chic activated charcoal poke bicycle rights
+            quinoa portland dreamcatcher neutra.
+        </p>
+    </div>
+    <div
+        class="flex flex-1 bg-#f9f7f7 flex-col justify-around items-center h-96 px-5 md:px-10">
+        <h2 class="capitalize font-bold text-3xl">Headline Goes Here</h2>
+        <Tips
+            texto="I’m baby retro chillwave letterpress small batch beard, paleo ugh banjo hot chicken godard craft beer. Biodiesel pork belly green juice VHS farm-to-table.">
+            <Brain />
+        </Tips>
+        <Tips
+            texto="I’m baby retro chillwave letterpress small batch beard, paleo ugh banjo hot chicken godard craft beer. Biodiesel pork belly green juice VHS farm-to-table.">
+            <Heart />
+        </Tips>
+        <Tips
+            texto="I’m baby retro chillwave letterpress small batch beard, paleo ugh banjo hot chicken godard craft beer. Biodiesel pork belly green juice VHS farm-to-table.">
+            <Health />
+        </Tips>
+    </div>
+</section>
