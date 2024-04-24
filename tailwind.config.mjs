@@ -11,6 +11,14 @@ export default {
 			},
 			backgroundImage: {
 				'main-pattern': "url('/image_1.webp')",
+				'info-tea': "url('/tea.webp')",
+				'tea-shadow': "linear-gradient(to top, white 0%, transparent 20%), linear-gradient(to right, white 0%, transparent 20%);"
+			},
+			height: {
+				'100': '28rem', // Custom height for InfoHead
+			},
+			fontFamily: {
+				'sans': ['Open Sans', 'sans-serif'],
 			}
 		},
 	},

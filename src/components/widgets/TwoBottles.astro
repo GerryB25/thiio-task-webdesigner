@@ -1,3 +1,23 @@
-<div class="flex justify-center items-center relative w-full py-5">
-    <img class="w-2/4 md:w-4/12 lg:w-1/2" src="/bottles.webp" alt="" />
+---
+interface Props {
+    size: string;
+}
+
+const { size } = Astro.props;
+---
+
+<div class="flex justify-center items-center w-full">
+    <img
+        class=`${size} aspect-square object-contain`
+        src="/bottles.webp"
+        alt=""
+    />
 </div>
+
+<!-- <div class="flex justify-center items-center relative w-full py-5">
+    <img
+        class="w-2/4 md:w-4/12 lg:w-1/2 aspect-square object-contain"
+        src="/bottles.webp"
+        alt=""
+    />
+</div> -->
