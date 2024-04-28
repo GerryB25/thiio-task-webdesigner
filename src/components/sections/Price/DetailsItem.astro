@@ -1,0 +1,14 @@
+---
+interface Props {
+    texto: string;
+}
+
+const { texto } = Astro.props;
+---
+
+<div class="flex flex-row justify-center items-center p-2 gap-2">
+    <slot />
+    <h3 class="text-teal-800 font-semibold capitalize text-sm text-start">
+        {texto}
+    </h3>
+</div>

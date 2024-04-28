@@ -4,17 +4,19 @@ import FiveStars from "./FiveStars.astro";
 
 <section class="lg:px-48 w-full flex h-64 justify-center items-center">
     <article
-        class="bg-#f9f7f7 w-full h-full flex flex-col justify-between items-center rounded-2xl p-6">
+        class="bg-#f9f7f7 w-full h-100 md:h-full flex flex-col justify-around lg:justify-between items-center rounded-2xl p-6">
         <div class="flex w-full justify-between items-center">
             <h2 class="text-2xl font-bold text-neutral-800">Reviews</h2>
             <span class="text-sm font-bold text-teal-800">
                 Testimonial Name, who says...
             </span>
         </div>
-        <div class="bg-white flex h-4/5 rounded-2xl">
+        <div
+            class="bg-white flex h-4/5 rounded-2xl flex-col md:flex-row justify-evenly items-center">
             <div class="flex justify-center items-center">
                 <img
-                    class="rounded-full w-2/3 aspect-square object-contain"
+                    loading="lazy"
+                    class="rounded-full w-3/12 md:w-2/3 aspect-square"
                     src="/michael-scott.webp"
                     alt="profile-pic"
                 />
