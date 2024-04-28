@@ -5,13 +5,13 @@ import Clock from "../../../assets/Clock.astro";
 ---
 
 <div
-    class="w-full h-96 bg-#f9f7f7 rounded-2xl flex justify-between items-center p-4">
+    class="w-full h-auto md:h-96 bg-#f9f7f7 rounded-2xl flex justify-between items-center p-4">
     <div
         class="w-full h-full rounded-2xl bg-white flex flex-col justify-center items-center">
         <div
-            class="w-full h-4/6 flex flex-row justify-between items-center p-5">
+            class="w-full h-80 md:h-4/6 flex flex-col justify-evenly md:flex-row md:justify-between items-center p-5">
             <div
-                class="w-3/12 h-full bg-info-tea bg-center bg-cover bg-no-repeat flex justify-center items-center">
+                class="hidden md:flex w-3/12 h-full bg-info-tea bg-center bg-cover bg-no-repeat justify-center items-center">
                 <img
                     class="w-4/12 relative md:left-20 lg:left-28"
                     src="/bottle-pills.webp"
@@ -19,7 +19,7 @@ import Clock from "../../../assets/Clock.astro";
                 />
             </div>
             <div
-                class="w-8/12 h-full flex flex-col justify-center items-start gap-3">
+                class="w-full md:w-8/12 h-full flex flex-col justify-center items-center text-center md:items-start md:text-start gap-3">
                 <h3 class="capitalize font-bold text-3xl text-teal-800">
                     Headline Goes Here
                 </h3>
@@ -39,10 +39,12 @@ import Clock from "../../../assets/Clock.astro";
             </div>
         </div>
 
-        <hr class="w-11/12 h-2 mx-auto" />
+        <hr class="w-10/12 md:w-11/12 h-2 mx-auto" />
 
-        <div class="w-full h-2/6 px-5 flex justify-between items-center">
-            <div class="flex w-6/12 justify-center items-start flex-col gap-2">
+        <div
+            class="w-full h-64 md:h-2/6 px-5 flex flex-col justify-evenly md:flex-row md:justify-between items-center">
+            <div
+                class="flex w-full md:w-6/12 justify-center items-center text-center md:items-start md:text-start flex-col gap-2">
                 <h2 class="capitalize font-bold text-3xl text-neutral-800">
                     Headline Goes Here
                 </h2>
@@ -51,7 +53,7 @@ import Clock from "../../../assets/Clock.astro";
                     paleo ugh banjo hot chicken godard craft beer.
                 </p>
             </div>
-            <div class="flex justify-around items-center w-6/12">
+            <div class="flex justify-around items-center w-full md:w-6/12">
                 <div
                     class="w-24 h-20 bg-#b4d5d1 flex flex-col justify-center items-center gap-2 rounded-lg">
                     <PillTab />

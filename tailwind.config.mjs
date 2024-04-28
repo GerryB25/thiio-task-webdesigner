@@ -22,10 +22,30 @@ export default {
 			},
 			height: {
 				'100': '28rem', // Custom height for InfoHead
+				'150': '34rem', // Custom height for InfoHead
 			},
 			fontFamily: {
 				'sans': ['Open Sans', 'sans-serif'],
-			}
+			},
+			keyframes: {
+				changebg: {
+					'0%': {
+						backgroundImage: 'url("/image_01.webp")',
+					},
+					'25%': {
+						backgroundImage: 'url("/image_02.webp")',
+					},
+					'50%': {
+						backgroundImage: 'url("/image_03.webp")',
+					},
+					'75%': {
+						backgroundImage: 'url("/image_04.webp")',
+					},
+				},
+			},
+			animation: {
+				changebg: 'changebg 10s steps(1) infinite', // Ajusta la duración y repetición según tus necesidades
+			},
 		},
 	},
 	plugins: [],

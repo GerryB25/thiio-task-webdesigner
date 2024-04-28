@@ -8,23 +8,32 @@ import SealFooter from "../../../assets/SealFooter.astro";
 <section
     class="bg-#f5b546 w-full flex flex-col justify-center items-center mt-10 md:mt-16">
     <div class="w-full h-28 lg:px-48 flex justify-around items-center">
-        <div class="flex flex-row justify-center items-center gap-3">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center gap-1 md:gap-3 text-center md:text-start">
             <Shield
-                clases="size-11 border-white border-x border-y rounded-full p-2"
+                clases="size-7 md:size-11 border-white border-x border-y rounded-full p-1 md:p-2"
             />
-            <span class="text-white text-sm">We Protect Your Privacy</span>
+            <span class="text-white text-xs md:text-sm"
+                >We Protect Your Privacy</span
+            >
         </div>
-        <div class="flex flex-row justify-center items-center gap-3">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center gap-1 md:gap-3 text-center md:text-start">
             <SealFooter
-                clases="size-11 border-white border-x border-y rounded-full p-2"
+                clases="size-7 md:size-11 border-white border-x border-y rounded-full p-1 md:p-2"
             />
-            <span class="text-white text-sm">100% Satisfaction Guaranteed</span>
+            <span class="text-white text-xs md:text-sm"
+                >100% Satisfaction Guaranteed</span
+            >
         </div>
-        <div class="flex flex-row justify-center items-center gap-3">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center gap-1 md:gap-3 text-center md:text-start">
             <Lock
-                clases="size-11 border-white border-x border-y rounded-full p-2"
+                clases="size-7 md:size-11 border-white border-x border-y rounded-full p-1 md:p-2"
             />
-            <span class="text-white text-sm">Your Information Is Secure</span>
+            <span class="text-white text-xs md:text-sm"
+                >Your Information Is Secure</span
+            >
         </div>
     </div>
     <Copyright />
