@@ -1,0 +1,31 @@
+---
+import Copyright from "./Copyright.astro";
+import Shield from "../../../assets/Shield.astro";
+import Lock from "../../../assets/Lock.astro";
+import SealFooter from "../../../assets/SealFooter.astro";
+---
+
+<section
+    class="bg-#f5b546 w-full flex flex-col justify-center items-center mt-10 md:mt-16">
+    <div class="w-full h-28 lg:px-48 flex justify-around items-center">
+        <div class="flex flex-row justify-center items-center gap-3">
+            <Shield
+                clases="size-11 border-white border-x border-y rounded-full p-2"
+            />
+            <span class="text-white text-sm">We Protect Your Privacy</span>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-3">
+            <SealFooter
+                clases="size-11 border-white border-x border-y rounded-full p-2"
+            />
+            <span class="text-white text-sm">100% Satisfaction Guaranteed</span>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-3">
+            <Lock
+                clases="size-11 border-white border-x border-y rounded-full p-2"
+            />
+            <span class="text-white text-sm">Your Information Is Secure</span>
+        </div>
+    </div>
+    <Copyright />
+</section>

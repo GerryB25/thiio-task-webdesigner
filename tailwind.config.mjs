@@ -9,11 +9,16 @@ export default {
 				'#fa991c': '#fa991c', //Custom colors for GET STARTED button
 				'#f9f7f7': '#f9f7f7', //Custom color for about box 2
 				'#b4d5d1': '#b4d5d1', //Custom color for Ingredients footer
+				'#f5b546': '#f5b546', //Custom color for final footer background
 			},
 			backgroundImage: {
 				'main-pattern': "url('/image_1.webp')",
 				'info-tea': "url('/tea.webp')",
-				'tea-shadow': "linear-gradient(to top, white 0%, transparent 20%), linear-gradient(to right, white 0%, transparent 20%);"
+				'tea-shadow': "linear-gradient(to top, white 0%, transparent 20%), linear-gradient(to right, white 0%, transparent 20%);",
+				'sm-img1': "url('/image_01.webp')",
+				'sm-img2': "url('/image_02.webp')",
+				'sm-img3': "url('/image_03.webp')",
+				'sm-img4': "url('/image_04.webp')",
 			},
 			height: {
 				'100': '28rem', // Custom height for InfoHead
