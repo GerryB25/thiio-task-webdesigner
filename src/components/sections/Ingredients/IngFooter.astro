@@ -1,0 +1,79 @@
+---
+import PillTab from "../../../assets/Pill&Tab.astro";
+import Cubiertos from "../../../assets/Cubiertos.astro";
+import Clock from "../../../assets/Clock.astro";
+---
+
+<div
+    class="w-full h-80 bg-#f9f7f7 rounded-2xl flex justify-between items-center p-4">
+    <div
+        class="w-full h-full rounded-2xl bg-white flex flex-col justify-center items-center">
+        <div
+            class="w-full h-4/6 flex flex-row justify-between items-center p-5">
+            <div
+                class="w-3/12 h-full bg-info-tea bg-center bg-cover bg-no-repeat flex justify-center items-center">
+                <img
+                    class="w-4/12 relative left-28"
+                    src="/bottle-pills.webp"
+                    alt="bottle of pills"
+                />
+            </div>
+            <div
+                class="w-8/12 h-full flex flex-col justify-center items-start gap-3">
+                <h3 class="capitalize font-bold text-2xl text-teal-800">
+                    Headline Goes Here
+                </h3>
+                <p class="text-sm text-pretty">
+                    I’m baby retro chillwave letterpress small batch beard,
+                    paleo ugh banjo hot chicken godard craft beer. Biodiesel
+                    pork belly green juice VHS farm-to-table, taxidermy heirloom
+                    scenester +1 chillwave man braid readymade locavore lomo.
+                </p>
+                <p class="text-sm text-pretty">
+                    Intelligentsia typewriter glossier, kogi pour-over YOLO
+                    everyday carry flannel. Green juice Brooklyn church-key
+                    skateboard selfies, normcore Tumblr shabby chic activated
+                    charcoal poke bicycle rights quinoa portland dreamcatcher
+                    neutra.
+                </p>
+            </div>
+        </div>
+
+        <hr class="w-11/12 h-2 mx-auto" />
+
+        <div class="w-full h-2/6 px-5 flex justify-between items-center">
+            <div class="flex w-6/12 justify-center items-start flex-col gap-2">
+                <h2 class="capitalize font-bold text-2xl text-neutral-800">
+                    Headline Goes Here
+                </h2>
+                <p class="text-xs text-pretty">
+                    I’m baby retro chillwave letterpress small batch beard,
+                    paleo ugh banjo hot chicken godard craft beer.
+                </p>
+            </div>
+            <div class="flex justify-around items-center w-6/12">
+                <div
+                    class="w-24 h-20 bg-#b4d5d1 flex flex-col justify-center items-center gap-2 rounded-lg">
+                    <PillTab />
+                    <span class="text-teal-800 font-bold text-xs uppercase">
+                        2x
+                    </span>
+                </div>
+                <div
+                    class="w-24 h-20 bg-#b4d5d1 flex flex-col justify-center items-center gap-2 rounded-lg">
+                    <Clock />
+                    <span class="text-teal-800 font-bold text-xs uppercase">
+                        Daily
+                    </span>
+                </div>
+                <div
+                    class="w-24 h-20 bg-#b4d5d1 flex flex-col justify-center items-center gap-2 rounded-lg">
+                    <Cubiertos />
+                    <span class="text-teal-800 font-bold text-xs uppercase">
+                        With Meal
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

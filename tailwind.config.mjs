@@ -8,6 +8,7 @@ export default {
 				'#f2ca7f': '#f2ca7f',
 				'#fa991c': '#fa991c', //Custom colors for GET STARTED button
 				'#f9f7f7': '#f9f7f7', //Custom color for about box 2
+				'#b4d5d1': '#b4d5d1', //Custom color for Ingredients footer
 			},
 			backgroundImage: {
 				'main-pattern': "url('/image_1.webp')",
