@@ -25,7 +25,7 @@ export default {
 				'150': '34rem', // Custom height for InfoHead
 			},
 			fontFamily: {
-				'sans': ['Open Sans', 'sans-serif'],
+				'opensans': ['Open Sans', 'sans-serif'],
 			},
 			keyframes: {
 				changebg: {
