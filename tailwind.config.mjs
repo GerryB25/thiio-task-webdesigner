@@ -13,8 +13,8 @@ export default {
 			},
 			backgroundImage: {
 				'main-pattern': "url('/image_1.webp')",
-				'info-tea': "url('/tea.webp')",
-				'tea-shadow': "linear-gradient(to top, white 0%, transparent 20%), linear-gradient(to right, white 0%, transparent 20%);",
+				'info-canela': "url('/bg_02.webp')",
+				'ingredient': "url('/canela-bottle.webp')",
 				'sm-img1': "url('/image_01.webp')",
 				'sm-img2': "url('/image_02.webp')",
 				'sm-img3': "url('/image_03.webp')",

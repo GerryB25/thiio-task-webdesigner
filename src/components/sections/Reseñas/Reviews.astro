@@ -12,16 +12,17 @@ import FiveStars from "./FiveStars.astro";
             </span>
         </div>
         <div
-            class="bg-white flex h-4/5 rounded-2xl flex-col md:flex-row justify-evenly items-center">
-            <div class="flex justify-center items-center">
+            class="bg-white w-full flex h-4/5 rounded-2xl flex-col md:flex-row justify-evenly items-center">
+            <div class="flex w-2/12 justify-center items-center">
                 <img
                     loading="lazy"
-                    class="rounded-full w-3/12 md:w-2/3 aspect-square"
-                    src="/michael-scott.webp"
+                    class="rounded-full w-full md:w-2/3 aspect-square"
+                    src="/testimonial.webp"
                     alt="profile-pic"
                 />
             </div>
-            <div class="flex flex-col justify-center items-center px-4 gap-4">
+            <div
+                class="w-10/12 flex flex-col justify-center items-center px-4 gap-4">
                 <div class="flex w-full justify-between items-center">
                     <span class="text-sm font-bold">Testimonial Name</span>
                     <FiveStars clases="justify-center items-center" />
