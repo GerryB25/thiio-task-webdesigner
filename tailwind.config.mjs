@@ -2,9 +2,6 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		screens: {
-			'xs': { 'min': '320px', 'max': '350px' },
-		},
 		extend: {
 			colors: {
 				'cafecarrito': '#eba121', //Custom color for shopping cart icon
